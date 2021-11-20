@@ -7,6 +7,7 @@
   pointer-events: none;
 }
 
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -36,3 +37,173 @@
     transform: rotate(360deg);
   }
 }
+
+/* The container */
+.containerCheck {
+  display: block;
+  position: relative;
+  padding-left: 0%;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.containerCheck input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.containerCheck:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.containerCheck input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.containerCheck input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.containerCheck .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/* .skicon{
+  text-align:right;
+  
+} */
+
+.gradient-custom-3 {
+
+  background: #84fab0;
+
+  background: -webkit-linear-gradient(to right, rgba(132, 250, 176, 0.5), rgba(143, 211, 244, 0.5));
+ 
+  background: linear-gradient(to right, rgba(132, 250, 176, 0.5), rgba(143, 211, 244, 0.5))
+}
+.gradient-custom-4 {
+
+  background: #84fab0;
+ 
+  background: -webkit-linear-gradient(to right, rgba(132, 250, 176, 1), rgb(78, 156, 196));
+
+  background: linear-gradient(to right, rgba(132, 250, 176, 1), rgba(143, 211, 244, 1))
+}
+
+
+
+.col-15 {
+  float: left;
+  width: 15%;
+  margin-top: 11px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+.col-0 {
+  float: left;
+  width: 0%;
+  margin-top: 6px;
+}
+
+
+/* .expert{
+  font-size: 22px;
+  
+} */
+
+.r{
+  font-size: 15px;
+}
+
+.a{
+  font-size: 15px;
+}
+
+.v{
+  font-size: 15px;
+}
+
+.area{
+  font-size: 50px;
+  text-justify: inter-word;
+}
+
+
+.userlogin{
+  text-align: center;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 30%;
+  height: 100%;
+  padding-bottom: 0%;
+} 
+
+.cardm{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.custom{
+  color:goldenrod;
+    font-size: 200%;
+}
+
+.custom:hover{
+  color: rgb(111, 0, 255);
+
+}
+
+ @keyframes color-change{
+  0%{ color: goldenrod;}
+  25%{color:crimson;}
+  50%{color: chartreuse;}
+  75%{color: cyan;}
+  85%{color:yellow;}
+  100%{color:darkblue}
+}
+
